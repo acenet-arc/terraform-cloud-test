@@ -37,7 +37,9 @@ module "openstack" {
   }
 
   public_keys = ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC3Ym8RnkOSzwS66QPxT1Ub00knXM5i0aMfFW7yZvoTm16aO9f6Z0wqbEp3+IwZTJ0lwDrtTZV8MZTuWNqximaXz8t4UTQ3aGBEQ0tW1JGSIgmQ9SilBwBdMQBVUQL3i3H32+L3uUnYtlOtZM+g0G0FwiHVX7ULV4d2z4RkjCDaHkO37rxOikRPbKhtQFLHAjURR3DzM9iV/cN1nFhL7iKjhdbMPjQ1AmC5VcA/y0YDFdB1yxCD8EID3+vzqymwe5DUy/lgn/bg0jECEtBPQS9neQVUhAieOQ5FAiSxB3T0bHwq9rtAmcwxwXJpABpIv91Lwz6bC/OtRiFBFKC21yxRyP0xWZlemi8quayYqzIcsdYBUPs2CGUO6aph7KTCYfNWBuEdIO2NmraqqF9RsiMfkXwczGnVfJTDQyOyLh+iYkl37zpb3PXGzwcYzo4bFwKxTrWaAlOv/VFNolm2ovier+xRJic3vnS/SGvfytwFmiqpV9Lnlbnebbi4GAQr4VXyiUPW7EYmWm/Zlvdj5Z+0xldRaJvcVLNB7p81N2QAMD3mSnj2YdM4QrI+C3u8+diftaCNKhFWuP70nx6cYCj7kP809lG+u1dbwXhx/DJh0FcA2LjNej2UmteOypU25QBtz31MgQR+Sru/rLXk5/rtdhivyn/EPEORkMHcTB5VdQ== castlemanager@castle-manager"]
-
+  
+  generate_ssh_key = true
+  
   nb_users = 10
   # Shared password, randomly chosen if blank
   guest_passwd = ""
