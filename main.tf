@@ -10,9 +10,9 @@ variable "pool" {
 module "openstack" {
   source         = "./openstack"
   config_git_url = "https://github.com/ComputeCanada/puppet-magic_castle.git"
-  config_version = "12.3.0"
+  config_version = "12.6.0"
 
-  cluster_name = "gpudev"
+  cluster_name = "gpudevII"
   domain       = "ace-net.training"
   image        = "Rocky-8.7-x64-2023-02"
 
@@ -37,9 +37,7 @@ module "openstack" {
   }
 
   public_keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE5wTADe54hOIewOERz1cOp1LzF5UmbyCl+9hyhzNZ3T cgeroux@sol"]
-  
-  generate_ssh_key = true
-  
+
   nb_users = 10
   # Shared password, randomly chosen if blank
   guest_passwd = ""
