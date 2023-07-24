@@ -38,6 +38,8 @@ module "openstack" {
 
   public_keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE5wTADe54hOIewOERz1cOp1LzF5UmbyCl+9hyhzNZ3T cgeroux@sol"]
 
+  generate_ssh_key = true
+  
   nb_users = 10
   # Shared password, randomly chosen if blank
   guest_passwd = ""
